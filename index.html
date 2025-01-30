@@ -4,10 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browser Pets</title>
+    <!-- google gont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/29b74d4afd.js" crossorigin="anonymous"></script>
+    <!-- Tailwind & Daisy cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+    <style> 
+    /* sora font */
+    .sora-font {
+    font-family: "Sora", serif;
+    }
+    .adlam-display-font {
+    font-family: "ADLaM Display", serif;
+    }
+
+    </style>
 </head>
 <body>
-    
+    <header>
+        <nav class="sora-font flex justify-between lg:justify-evenly py-6  px-3 lg:px-0">
+            <div class="flex gap-4">
+                <img class="w-11 h-12" src="assets/logo-header.png" alt="">
+                <h1 class=" place-content-center text-2xl font-semibold">Browse<span class="text-[#FFDC26]">4</span>Pets</h1>
+            </div>
+            <div class="pt-3 hidden lg:block">
+                <ul class="flex gap-4">
+                    <li><a class="text-sm font-semibold" href="">Find a pet</a></li>
+                    <li><a class="text-sm font-semibold" href="">Breeds</a></li>
+                    <li><a class="text-sm font-semibold" href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="space-x-2 hidden lg:block">
+                <!-- icon -->
+                    <i class="fa-regular fa-bell hover:cursor-pointer text-xl"></i>
+                    <i class="fa-solid fa-magnifying-glass hover:cursor-pointer text-xl"></i>
+                    <button class="btn btn-outline btn-warning w-28 ">Login</button>
+                    <button class="btn btn-warning w-28">Register</button>
+            </div>
+            <div class="lg:hidden block">
+                <a href=""><i class="fa-solid fa-bars text-2xl pt-2"></i></a>
+            </div>
+        </nav>
+
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
